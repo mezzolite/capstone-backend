@@ -6,5 +6,10 @@ module.exports = {
         getAll: () => {
             return database('users')
         }
+    },
+    avatar: {
+        getAll: () => {
+            return database('avatars')
+        }
     }
 }

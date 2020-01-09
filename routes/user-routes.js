@@ -10,4 +10,17 @@ const queries = require('../queries')
             .then(response.status(201))
     })
 
+    router.post('/users', (request, response) => {
+        // if(queries.user.findUser(request.body)){
+        //     response.send("Username already exists")
+        // }
+        // else{
+        //     queries.user.createUser(request.body)
+        //     .then(user => response.json(user))
+        // }  
+        queries.user.createUser(request.body)
+            .then(user => response.json(user))
+    })
+
+
 module.exports = router

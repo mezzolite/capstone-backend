@@ -22,16 +22,19 @@ module.exports = {
                         .then(users => users[0])
                 })
             
-        },
-        findUser: (user) => {
-            return database('users')
-                .where('username', user.username)
-                
         }
+
     },
     avatar: {
         getAll: () => {
             return database('avatars')
+        }
+    },
+    login: {
+        authorizeUser: (user) => {
+            return database('users')
+                .where({username: user.username})
+                .first()
         }
     }
 }

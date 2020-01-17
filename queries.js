@@ -56,6 +56,11 @@ module.exports = {
     userActions: {
         getAll: () => {
             return database('user-actions')
+        },
+        createUserAction: (userAction) => {
+            return database('user-actions')
+                .insert(userAction)
+                .returning('*')
         }
     }
 }

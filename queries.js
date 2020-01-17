@@ -52,5 +52,10 @@ module.exports = {
         getAll: () => {
             return database('actions')
         }
+    },
+    userActions: {
+        getAll: () => {
+            return database('user-actions')
+        }
     }
 }

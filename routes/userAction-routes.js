@@ -10,4 +10,11 @@ router.get('/user-actions', (request, response) => {
         .then(response.status(201))
 })
 
+router.post('/user-actions', (request, response) => {
+    queries
+        .userActions
+        .createUserAction(request.body)
+        .then(userAction => response.json(userAction))
+})
+
 module.exports = router

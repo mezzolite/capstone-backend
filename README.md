@@ -8,6 +8,9 @@ Imp-Politic is a game of democracy, rewarding users for participation and taking
 ## Stack
 
 Node.js
+Express
+PostgreSQL
+Knex
 
 ## Deployment
 
@@ -21,6 +24,10 @@ Deployed on Heroku [here](https://imp-politic.herokuapp.com/)
 5. Run ```knex migrate:latest```
 6. Run ```knex seed:run```
 4. Run ```npm start```
+
+## Database Setup
+
+![DB schema](https://i.imgur.com/rmsUiax.png)
 
 ## Sources
 

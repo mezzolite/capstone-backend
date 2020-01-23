@@ -8,9 +8,14 @@ Imp-Politic is a game of democracy, rewarding users for participation and taking
 ## Stack
 
 Node.js
+
 Express
+
 PostgreSQL
+
 Knex
+
+Auth: Bcrypt
 
 ## Deployment
 

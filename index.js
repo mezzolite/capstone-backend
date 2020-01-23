@@ -18,4 +18,4 @@ app.use(avatarRouter)
 app.use(actionRouter)
 app.use(userActionsRouter)
 
-app.listen(port, () => console.log(`listening on port ${port}`))
+app.listen(port, () => console.log(`listening on port ${port}!`))

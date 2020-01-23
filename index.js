@@ -7,7 +7,6 @@ const actionRouter = require('./routes/action-routes')
 const userActionsRouter = require('./routes/userAction-routes')
 const cors = require('cors')
 const bodyParser = require('body-parser')
-const bcrypt = require('bcrypt')
 
 
 app.use(cors())
